@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Raleway:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  @apply w-full overflow-x-hidden font-main
+}
+
+body {
+  background: url('./assets/bg.png');
+  background-size: contain;
+}
+
+/* welcome page */
+
+#welcome {
+  @apply absolute h-screen w-full bg-second z-10 flex flex-col justify-center transition-all duration-1000
+}
+
+#welcome h1 {
+  @apply text-4xl md:text-7xl capitalize bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500 font-second font-medium text-center
+}
+
+/* header */
+
+#logo {
+  @apply text-2xl uppercase font-main font-medium tracking-wider
+}
+
+#nav_item {
+  @apply font-main text-xs font-medium opacity-70 hover:opacity-100 hover:bg-[#ff00ff00] transition-all
+}
+
+#nav_item:first-child{
+  @apply opacity-100
+}
+
+.css-1c0poz9-MuiContainer-root {
+  @apply px-0
+}
+
+.css-pobhl-MuiTypography-root{
+  font-family: "Raleway", sans-serif!important
+}
+
+#header_container {
+  @apply mx-auto max-w-[95%] lg:max-w-[1250px]
+}
+
+#my_drawer {
+  @apply flex flex-col py-10 items-center h-full w-[200px] sm:w-[300px] bg-second text-white
+}
+
+#my_drawer #nav_item {
+  @apply text-white text-base font-medium
+}
+
+/* banner */
+
+#banner_btn {
+  @apply font-main font-semibold rounded-lg py-2.5 text-sm normal-case bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:bg-gradient-to-l hover:scale-95 transition-all
+}
+
+#contact_btn {
+  @apply font-main font-semibold rounded-lg py-2.5 px-5 text-white text-sm normal-case bg-gradient-to-r from-violet-500 to-fuchsia-500 hover:bg-gradient-to-l hover:scale-95 transition-all
+}
+
+#banner_title {
+  @apply text-3xl lg:text-[50px] text-center md:text-left text-white leading-tight
+}
+
+#banner_des {
+  @apply text-white text-center md:text-left text-base md:text-xl
+}
+
+#my_badge {
+  @apply text-white font-main text-xs tracking-[0.2em] bg-second inline-block py-2 px-5 rounded-full font-medium
+}
+
+#about h2,
+#services h2,
+#education h2,
+#skills h2,
+#projects h2,
+#contact h2 {
+  @apply text-white text-2xl md:text-4xl font-second
+}
+
+/* about */
+
+#about_grid {
+  @apply py-40
+}
+
+#about p{
+  @apply font-main text-white opacity-70 leading-normal
+}
+
+#about img {
+  @apply w-full h-auto rounded-3xl border-2 border-br transition-all hover:border-white hover:-translate-y-2 mt-8 lg:mt-0
+}
+
+#about p span {
+  opacity: 1
+}
+
+/* services */
+
+#services img {
+  @apply w-16
+}
+
+#services h5 {
+  @apply text-white font-main font-medium mt-5 mb-2
+}
+
+#services p {
+  @apply font-main text-white opacity-70
+}
+
+#service_card {
+  @apply p-4 md:p-10 border border-br rounded-xl bg-second hover:border-white hover:-translate-y-1.5 transition-all duration-300
+}
+
+/* education */
+
+#education_container-1,
+#education_container-3,
+#education_container-5 {
+  @apply w-full md:w-[47%]
+}
+
+#education_container-2,
+#education_container-4 {
+  @apply w-full md:w-[6%]
+}
+
+#education_card {
+  @apply border border-br p-5 rounded-xl inline-block space-y-1 text-left transition-all hover:border-white bg-second z-10
+}
+
+#education_card h5 {
+  @apply text-white font-main text-lg
+}
+
+#education_card h6 {
+  @apply text-white font-main text-base
+}
+
+#education_card p {
+  @apply text-white font-main text-sm
+}
+
+/* skills */
+
+#skill_item {
+  @apply border border-br bg-second py-3 px-5 rounded-full flex gap-2 items-center hover:border-white transition-all hover:-translate-y-1
+}
+
+#skill_item h6 {
+  @apply text-white font-main text-sm font-semibold
+}
+
+#projects .project_card {
+  @apply border border-br rounded-xl relative
+}
+
+/* projects */
+
+.project_card img {
+  @apply w-full h-80 transition-all rounded-xl
+}
+
+.project_card h6 {
+  @apply text-white font-second font-semibold my-2.5 text-lg
+}
+
+.project_card .svg_container {
+  @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all
+}
+
+.project_card svg{
+  @apply text-white hidden text-3xl cursor-pointer hover:scale-90 transition-all
+}
+
+.project_card:hover img {
+  @apply opacity-40
+}
+
+.project_card:hover svg {
+  @apply block
+}
+
+#slider_modal {
+  @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all w-4/5 md:w-1/2 mx-auto h-auto max-h-[85%] md:max-h-[500px]
+}
+
+.swiper-slide img {
+  @apply w-full h-[100%] md:max-h-[500px] object-cover
+}
+
+/* contact */
+
+#contact input,
+#contact textarea  {
+  @apply font-main text-white border border-br bg-second py-3 px-4 w-full rounded-lg focus:outline-none focus:border-white overflow-hidden
+}
+
+#social {
+  @apply flex items-center gap-1.5 rounded-2xl w-auto p-2.5 bg-second border-white border cursor-pointer transition-all duration-500 rotate-45 hover:rotate-0
+}
+
+#social:nth-child(1):hover {
+  @apply hover:bg-[#0866FF]
+}
+
+#social:nth-child(2):hover {
+  @apply hover:bg-[#0A66C2]
+}
+
+#social:nth-child(3):hover {
+  @apply hover:bg-white
+}
+
+#social_icon, 
+#social_icon_last {
+  @apply text-xl -rotate-45 transition-all duration-500
+}
+
+#social:hover #social_icon {
+  @apply text-white rotate-0
+}
+
+#social:hover #social_icon_last {
+  @apply text-second rotate-0
+}
+
+/* footer */
+
+#footer {
+  @apply py-1 bg-black
+}
+
+#footer #container {
+  @apply max-w-[90%] lg:max-w-[1200px] mx-auto flex flex-col sm:flex-row items-center justify-between
+}
+
+#footer p {
+  @apply text-white font-main
+}
