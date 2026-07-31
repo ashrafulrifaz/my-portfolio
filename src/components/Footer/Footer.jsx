@@ -78,7 +78,7 @@ const Footer = () => {
                     </svg>
                 </Link>
             </div>
-            <p className='text-[#7E7067] text-center mt-9'>© 2026 Ashraful All Right Reserved</p>
+            <p className='text-[#7E7067] text-center mt-9'>© 2026 <span className='font-semibold'>Ashraful</span> All Right Reserved</p>
         </div>
     );
 };
