@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="px-60">
+    <div>
       <Hero />
       <Skills />
       <Projects />
