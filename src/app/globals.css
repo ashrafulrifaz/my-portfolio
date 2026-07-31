@@ -24,3 +24,16 @@ body {
   color: #000000;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+.btn {
+  @apply capitalize font-medium border border-[#D2D2D2] bg-[#F9F8F6] rounded-full pl-3.5 pr-3 py-2 flex gap-2 text-[#251D18] items-center shadow-sm cursor-pointer transition-all duration-150
+}
+
+.btn svg {
+  @apply transition-all duration-300
+}
+
+.btn:hover svg{
+  @apply -rotate-45 scale-120
+}
