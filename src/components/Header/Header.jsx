@@ -18,7 +18,7 @@ const Header = () => {
                 {
                     navItems?.map(item => (
                         <li key={item?.id}>
-                            <Link href={item.link} className={`${item?.link === pathname ? 'font-semibold text-[#4E433D]' : 'font-medium text-[#4E433D]'}`}>{item.text}</Link>
+                            <Link href={item.link} className={`${item?.link === pathname ? 'text-[#8B3100]' : 'font-medium text-[#4E433D] hover:text-[#8B3100]'}`}>{item.text}</Link>
                         </li>
                     ))
                 }

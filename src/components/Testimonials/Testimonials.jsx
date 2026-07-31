@@ -3,8 +3,9 @@ import Image from 'next/image';
 import React from 'react';
 
 const Testimonials = () => {
+
     return (
-        <div className='py-10'>
+        <div className='pt-10 pb-16'>
             <h3 className={`${rufina.className} text-xl`}>Testimonials</h3>
             <div className="grid grid-cols-2 gap-10 mt-12">
                 <div>
