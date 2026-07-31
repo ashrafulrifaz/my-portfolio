@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { HyperText } from "../MiniComp/HyperText";
+import { PixelImage } from "../MiniComp/PixelImage";
 
 const Hero = () => {
     return (
@@ -74,7 +75,16 @@ const Hero = () => {
                 </div>
             </div>
             <div className="flex flex-col justify-center items-end">
-                <Image src={'https://res.cloudinary.com/db30o33kz/image/upload/v1785510220/ChatGPT_Image_Jul_30_2026_at_05_06_04_PM_oazgxm.png'} alt="ashraful's image" width={200} height={150} className="rounded-3xl w-60 h-auto" />
+                <PixelImage
+                src="https://res.cloudinary.com/db30o33kz/image/upload/v1785510220/ChatGPT_Image_Jul_30_2026_at_05_06_04_PM_oazgxm.png"
+                alt="ashraful's image"
+                width={3}
+                height={4}
+                customGrid={{ rows: 6, cols: 4 }}
+                grayscaleAnimation
+                blurAmount={14}
+                className="rounded-3xl w-60"
+                />
             </div>
         </div>
     );
