@@ -1,13 +1,16 @@
-import { fjallaOne } from "@/app/layout";
 import Image from "next/image";
 import Link from "next/link";
+import { HyperText } from "../MiniComp/HyperText";
 
 const Hero = () => {
     return (
-        <div className="grid grid-cols-2 gap-10 h-[80vh]">
+        <div className="grid grid-cols-2 gap-10 h-[90vh]">
             <div className="flex flex-col justify-center">
                 <h6 className="text-sm font-medium text-[#8B3100] tracking-widest">WEB DESIGNER & DEVELOPER</h6>
-                <h1 className={`${fjallaOne.className} text-9xl mt-12`}>Ashraful <span className="italic">Islam</span></h1>
+                <HyperText>Ashraful</HyperText>
+                <div className="-mt-10">
+                    <HyperText>Islam</HyperText>
+                </div>
                 <p className="text-[#7E7067] mt-10">Noakhali, Bangladesh</p>
                 <p className="text-[#7E7067] mt-8">I design and develop web experiences with Figma, Framer & MERN. Turning creative ideas into seamless, functional digital experiences.</p>
 

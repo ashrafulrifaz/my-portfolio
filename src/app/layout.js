@@ -8,18 +8,6 @@ const dmSans = DM_Sans({
   subsets: ['latin']
 });
 
-export const rufina = Rufina({
-  weight: ['400', '700'],
-  subsets: ['latin'],
-  variable: '--font-rufina',
-});
-
-export const fjallaOne = Fjalla_One({
-  weight: ['400'],
-  subsets: ['latin'],
-  variable: '--font-fjalla-one',
-});
-
 export const metadata = {
   title: "Ashraful - Web Designer & Developer",
   description: "web designer & developer",

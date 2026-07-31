@@ -1,4 +1,4 @@
-import { rufina } from '@/app/layout';
+import { rufina } from '@/lib/fonts';
 import Image from 'next/image';
 import React from 'react';
 
