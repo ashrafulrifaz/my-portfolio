@@ -10,30 +10,30 @@ const Projects = () => {
             
             <div className='mt-14 border-2 border-[#d2d2d2] bg-[#f4f4f4] p-2 rounded-2xl'>
                 <div className='border border-[#d2d2d2] bg-[#fffffc] rounded-xl p-5 pb-0'>
-                    <Link href={'/'} className="flex items-center justify-between">
+                    <div className="flex items-center justify-between">
                         <h3 className='text-xl font-semibold'>Brainnect</h3>
-                        <div>
+                        <Link href={'/'} className='project-arrow'>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                                 <path d="M18.5 12L4.99997 12"></path>
                                 <path d="M13 18C13 18 19 13.5811 19 12C19 10.4188 13 6 13 6"></path>
                             </svg>
-                        </div>
-                    </Link>
+                        </Link>
+                    </div>
                     <p className='text-[#7E7067] font-regular mt-2'>A modern, fully responsive digital agency website</p>
                     <Image src={'https://res.cloudinary.com/db30o33kz/image/upload/v1785517392/project-1_khqiz3.png'} alt='project 1' width={800} height={400} className='w-[93%] h-auto mt-7 rounded-t-3xl mx-auto border-[5px] border-b-0 border-[#E4E1E1]' />
                 </div>
             </div>
             <div className='mt-14 border-2 border-[#d2d2d2] bg-[#f4f4f4] p-2 rounded-2xl'>
                 <div className='border border-[#d2d2d2] bg-[#fffffc] rounded-xl p-5 pb-0'>
-                    <Link href={'/'} className="flex items-center justify-between">
+                    <div className="flex items-center justify-between">
                         <h3 className='text-xl font-semibold'>AirWorld</h3>
-                        <div>
+                        <Link href={'/'} className='project-arrow'>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                                 <path d="M18.5 12L4.99997 12"></path>
                                 <path d="M13 18C13 18 19 13.5811 19 12C19 10.4188 13 6 13 6"></path>
                             </svg>
-                        </div>
-                    </Link>
+                        </Link>
+                    </div>
                     <p className='text-[#7E7067] font-regular mt-2'>A modern, fully responsive digital agency website</p>
                     <Image src={'https://res.cloudinary.com/db30o33kz/image/upload/v1785517402/project-2_dsz0ck.png'} alt='project 1' width={800} height={400} className='w-[93%] h-auto mt-7 rounded-t-3xl mx-auto border-[5px] border-b-0 border-[#E4E1E1]' />
                 </div>
@@ -42,7 +42,7 @@ const Projects = () => {
                 <div className='border border-[#d2d2d2] bg-[#fffffc] rounded-xl p-5 pb-0'>
                     <div className="flex items-center justify-between">
                         <h3 className='text-xl font-semibold'>BloodBridge</h3>
-                        <Link href={'/'}>
+                        <Link href={'/'} className='project-arrow'>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                                 <path d="M18.5 12L4.99997 12"></path>
                                 <path d="M13 18C13 18 19 13.5811 19 12C19 10.4188 13 6 13 6"></path>
