@@ -8,14 +8,16 @@ const dmSans = DM_Sans({
   subsets: ['latin']
 });
 
-const rufina = Rufina({
+export const rufina = Rufina({
   weight: ['400', '700'],
-  subsets: ['latin']
+  subsets: ['latin'],
+  variable: '--font-rufina',
 });
 
-const fJallaOne = Fjalla_One({
-  weight: ['400', '700'],
-  subsets: ['latin']
+export const fjallaOne = Fjalla_One({
+  weight: ['400'],
+  subsets: ['latin'],
+  variable: '--font-fjalla-one',
 });
 
 export const metadata = {
