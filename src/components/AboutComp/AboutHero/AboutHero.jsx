@@ -5,7 +5,7 @@ import React from 'react';
 
 const AboutHero = () => {
     return (
-        <div className='h-[80vh]'>
+        <div className='h-[75vh]'>
             <div className="grid grid-cols-2 gap-10 h-full">
                 <div className="flex flex-col justify-center">
                     <h6 className="text-sm font-medium text-[#8B3100] tracking-widest">ABOUT ME</h6>
