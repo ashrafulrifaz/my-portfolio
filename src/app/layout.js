@@ -1,4 +1,4 @@
-import { DM_Sans, Geist, Geist_Mono, Rufina } from "next/font/google";
+import { DM_Sans, Fjalla_One, Rufina } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
@@ -9,6 +9,11 @@ const dmSans = DM_Sans({
 });
 
 const rufina = Rufina({
+  weight: ['400', '700'],
+  subsets: ['latin']
+});
+
+const fJallaOne = Fjalla_One({
   weight: ['400', '700'],
   subsets: ['latin']
 });
