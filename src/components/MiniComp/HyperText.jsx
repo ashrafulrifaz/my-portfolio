@@ -11,7 +11,7 @@ const getRandomChar = () =>
 
 export function HyperText({
   children,
-  className = `${fjallaOne.className} text-9xl mt-12`,
+  className = ``,
   duration = 800,
   animateOnHover = true,
   startOnView = false,
