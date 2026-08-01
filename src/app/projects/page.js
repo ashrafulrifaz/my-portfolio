@@ -42,11 +42,11 @@ const projects = [
 
 const page = () => {
     return (
-        <div className="py-14">
+        <div className="py-10 lg:py-14">
             <h3 className={`${rufina.className} text-xl text-center`}>Featured Projects</h3>
             {
                 projects?.map((project, idx) => (
-                    <div key={idx} className='mt-14 border-2 border-[#d2d2d2] bg-[#f4f4f4] p-2 rounded-2xl'>
+                    <div key={idx} className='mt-8 lg:mt-14 border-2 border-[#d2d2d2] bg-[#f4f4f4] p-2 rounded-2xl'>
                         <div className='border border-[#d2d2d2] bg-[#fffffc] rounded-xl p-5 pb-0'>
                             <div className="flex items-center justify-between">
                                 <h3 className='text-xl font-semibold'>{project.title}</h3>
@@ -59,7 +59,7 @@ const page = () => {
                             </div>
                             <p className='text-[#7E7067] font-regular mt-2'>{project.description}</p>
                             <Link href={'/'}>
-                                <Image src={project.image} alt='project 1' width={800} height={400} className='w-[93%] h-auto mt-7 rounded-t-3xl mx-auto border-[5px] border-b-0 border-[#E4E1E1]' />
+                                <Image src={project.image} alt='project 1' width={800} height={400} className='w-full lg:w-[93%] h-auto mt-7 rounded-t-3xl mx-auto border-[5px] border-b-0 border-[#E4E1E1]' />
                             </Link>
                         </div>
                     </div>

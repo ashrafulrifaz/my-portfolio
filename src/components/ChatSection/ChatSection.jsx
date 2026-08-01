@@ -56,35 +56,35 @@ const ChatSection = () => {
     };
 
     return (
-        <div className="border border-[#d2d2d2] rounded-3xl p-5 pt-3">
+        <div className="border border-[#d2d2d2] rounded-3xl p-3 lg:p-5">
             <div className="max-h-[420px] overflow-y-auto space-y-5 pr-1">
                 {messages.map((msg, i) =>
                     msg.role === "assistant" ? (
                         <motion.div
+                            key={i}
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.3 }}
+                            className="flex gap-3 w-full"
+                        >
+                            <div className="pt-2 w-[18%]">
+                                <Image src={"/assets/mine.png"} alt="my image" width={50} height={50} />
+                            </div>
+                            <div>
+                                <div className="bg-[#eaeaea] px-4 py-2.5 lg:py-3.5 mt-1.5 rounded-3xl max-w-[95%]">
+                                <p>{msg.content}</p>
+                                </div>
+                            </div>
+                        </motion.div>
+                    ) : (
+                    <motion.div
                         key={i}
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.3 }}
-                        className="flex gap-3"
-                        >
-                        <div className="pt-2">
-                            <Image src={"/assets/mine.png"} alt="my image" width={50} height={50} />
-                        </div>
-                        <div>
-                            <div className="bg-[#eaeaea] px-4 py-3.5 mt-1.5 rounded-4xl max-w-[70%]">
-                            <p>{msg.content}</p>
-                            </div>
-                        </div>
-                        </motion.div>
-                    ) : (
-                    <motion.div
-                    key={i}
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.3 }}
-                    className="flex justify-end"
+                        className="flex justify-end"
                     >
-                    <div className="bg-[#eaeaea] px-4 py-3.5 mt-1.5 rounded-4xl max-w-[70%]">
+                    <div className="bg-[#eaeaea] px-3 lg:px-4 py-2.5 lg:py-3.5 mt-1.5 rounded-4xl max-w-[95%]">
                         <p>{msg.content}</p>
                     </div>
                     </motion.div>
@@ -93,18 +93,18 @@ const ChatSection = () => {
 
                 {isLoading && (
                 <div className="flex gap-3">
-                    <div className="pt-7">
-                    <Image src={"/assets/mine.png"} alt="my image" width={50} height={50} />
+                    <div className="pt-5">
+                    <Image src={"/assets/mine.png"} alt="my image" width={50} height={50} className="w-10 h-10" />
                     </div>
-                    <div className="bg-[#eaeaea] px-4 py-4 mt-1.5 rounded-4xl flex gap-1 items-center">
-                    {[0, 1, 2].map((i) => (
-                        <motion.span
-                        key={i}
-                        className="w-1.5 h-1.5 rounded-full bg-[#8f8f8f]"
-                        animate={{ y: [0, -4, 0] }}
-                        transition={{ duration: 0.6, repeat: Infinity, delay: i * 0.15 }}
-                        />
-                    ))}
+                    <div className="bg-[#eaeaea] px-4 py-2 lg:py-4 mt-1.5 rounded-4xl flex gap-1 items-center">
+                        {[0, 1, 2].map((i) => (
+                            <motion.span
+                            key={i}
+                            className="w-1.5 h-1.5 rounded-full bg-[#8f8f8f]"
+                            animate={{ y: [0, -4, 0] }}
+                            transition={{ duration: 0.6, repeat: Infinity, delay: i * 0.15 }}
+                            />
+                        ))}
                     </div>
                 </div>
                 )}

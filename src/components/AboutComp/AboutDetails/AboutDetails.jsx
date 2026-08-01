@@ -3,7 +3,7 @@ import React from 'react';
 
 const AboutDetails = () => {
     return (
-        <div className='py-20'>
+        <div className='pt-0 pb-10 lg:py-20'>
             <div>
                 <h3 className={`${rufina.className} text-xl`}>Introduction</h3>
                 <p className='text-[#7E7067] text-[17px] mt-8'>I am Ashraful, a passionate and dedicated frontend developer based in Bangladesh. I have always been fascinated by the intersection of design and technology — the idea that a few lines of code can create something beautiful, functional, and impactful. From the very first time I built a webpage and saw it come to life in the browser, I knew this was exactly what I was meant to do.</p>

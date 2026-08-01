@@ -3,7 +3,7 @@ import React from 'react';
 
 const SocialSection = () => {
     return (
-        <div className='grid grid-cols-2 gap-10 mt-10'>
+        <div className='grid grid-cols-1 lg;grid-cols-2 gap-6 lg:gap-10 mt-6 lg:mt-10'>
             <div className='border border-[#d2d2d2] rounded-3xl p-5'>
                 <div className='flex items-center justify-between'>
                     <div>
