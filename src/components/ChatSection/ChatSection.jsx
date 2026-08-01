@@ -67,11 +67,11 @@ const ChatSection = () => {
                             transition={{ duration: 0.3 }}
                             className="flex gap-3 w-full"
                         >
-                            <div className="pt-2 w-[18%]">
+                            <div className="pt-2">
                                 <Image src={"/assets/mine.png"} alt="my image" width={50} height={50} />
                             </div>
                             <div>
-                                <div className="bg-[#eaeaea] px-4 py-2.5 lg:py-3.5 mt-1.5 rounded-3xl max-w-[95%]">
+                                <div className="bg-[#eaeaea] px-4 py-2.5 lg:py-3.5 mt-1.5 rounded-3xl max-w-[95%] lg:max-w-[70%]">
                                 <p>{msg.content}</p>
                                 </div>
                             </div>
@@ -84,7 +84,7 @@ const ChatSection = () => {
                         transition={{ duration: 0.3 }}
                         className="flex justify-end"
                     >
-                    <div className="bg-[#eaeaea] px-3 lg:px-4 py-2.5 lg:py-3.5 mt-1.5 rounded-4xl max-w-[95%]">
+                    <div className="bg-[#eaeaea] px-3 lg:px-4 py-2.5 lg:py-3.5 mt-1.5 rounded-4xl max-w-[95%] lg:max-w-[70%]">
                         <p>{msg.content}</p>
                     </div>
                     </motion.div>

@@ -19,8 +19,7 @@ const SocialSection = () => {
                 </div>
 
                 <div className='mt-24'>
-
-                    <Link href={'mailto:your@email.com'} className='btn justify-center text-lg' target='_blank'>
+                    <Link href={'mailto:devrifaz@email.com'} className='btn justify-center text-lg' target='_blank'>
                         <span className="text-sm">Email Me</span>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                             <path d="M18.5 12L4.99997 12"></path>
@@ -45,7 +44,6 @@ const SocialSection = () => {
                 </div>
 
                 <div className='mt-24'>
-
                     <Link href={'https://www.instagram.com/ashrafulrifaz/'} className='btn justify-center text-lg' target='_blank'>
                         <span className="text-sm">DM Me</span>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
