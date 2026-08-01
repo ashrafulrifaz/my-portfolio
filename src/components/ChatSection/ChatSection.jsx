@@ -67,7 +67,7 @@ const ChatSection = () => {
                         transition={{ duration: 0.3 }}
                         className="flex gap-3"
                         >
-                        <div className="pt-7">
+                        <div className="pt-2">
                             <Image src={"/assets/mine.png"} alt="my image" width={50} height={50} />
                         </div>
                         <div>

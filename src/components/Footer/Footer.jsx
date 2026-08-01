@@ -13,7 +13,7 @@ const Footer = () => {
     const pathname = usePathname()
 
     return (
-        <div className='bg-[#ECECEC] pt-10 pb-6 px-60'>
+        <div className='bg-[#ECECEC] pt-10 pb-6 px-5 lg:px-60'>
             <div className="flex items-center justify-between">
                 <h3 className='font-semibold text-2xl'>Ashraful</h3>
                 <ul className='flex items-center gap-7'>

@@ -6,12 +6,12 @@ import { fjallaOne } from "@/lib/fonts";
 
 const Hero = () => {
     return (
-        <div className="grid grid-cols-2 gap-10 h-[90vh]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:h-[90vh] py-16 lg:py-0">
             <div className="flex flex-col justify-center">
                 <h6 className="text-sm font-medium text-[#8B3100] tracking-widest">WEB DESIGNER & DEVELOPER</h6>
-                <HyperText className={`${fjallaOne.className} text-9xl mt-12`}>Ashraful</HyperText>
+                <HyperText className={`${fjallaOne.className} text-8xl lg:text-9xl mt-12`}>Ashraful</HyperText>
                 <div className="-mt-10">
-                    <HyperText className={`${fjallaOne.className} text-9xl mt-12`}>Islam</HyperText>
+                    <HyperText className={`${fjallaOne.className} text-8xl lg:text-9xl mt-12`}>Islam</HyperText>
                 </div>
                 <p className="text-[#7E7067] mt-10">Noakhali, Bangladesh</p>
                 <p className="text-[#7E7067] mt-8">I design and develop web experiences with Figma, Framer & MERN. Turning creative ideas into seamless, functional digital experiences.</p>
@@ -75,7 +75,7 @@ const Hero = () => {
                     </Link>
                 </div>
             </div>
-            <div className="flex flex-col justify-center items-end">
+            <div className="flex flex-col justify-center items-center lg:items-end mt-6 lg:mt-0">
                 <PixelImage
                 src="https://res.cloudinary.com/db30o33kz/image/upload/v1785510220/ChatGPT_Image_Jul_30_2026_at_05_06_04_PM_oazgxm.png"
                 alt="ashraful's image"
@@ -84,7 +84,7 @@ const Hero = () => {
                 customGrid={{ rows: 6, cols: 4 }}
                 grayscaleAnimation
                 blurAmount={14}
-                className="rounded-3xl w-60"
+                className="rounded-3xl w-4/5 lg:w-60"
                 />
             </div>
         </div>
