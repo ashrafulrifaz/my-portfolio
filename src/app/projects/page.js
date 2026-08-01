@@ -58,7 +58,9 @@ const page = () => {
                                 </Link>
                             </div>
                             <p className='text-[#7E7067] font-regular mt-2'>{project.description}</p>
-                            <Image src={project.image} alt='project 1' width={800} height={400} className='w-[93%] h-auto mt-7 rounded-t-3xl mx-auto border-[5px] border-b-0 border-[#E4E1E1]' />
+                            <Link href={'/'}>
+                                <Image src={project.image} alt='project 1' width={800} height={400} className='w-[93%] h-auto mt-7 rounded-t-3xl mx-auto border-[5px] border-b-0 border-[#E4E1E1]' />
+                            </Link>
                         </div>
                     </div>
                 ))
