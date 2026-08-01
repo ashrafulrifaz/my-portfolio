@@ -17,13 +17,16 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
+    const checkScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    // Sync immediately on mount / whenever the route changes
+    checkScroll();
+
+    window.addEventListener("scroll", checkScroll);
+    return () => window.removeEventListener("scroll", checkScroll);
+  }, [pathname]); // <-- re-run whenever the page changes
 
   return (
     <div className="sticky top-0 z-50 w-full flex justify-center pt-5 px-60">
