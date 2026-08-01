@@ -4,9 +4,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Cross as Hamburger } from 'hamburger-react'
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const HamburgerMenu = () => {
     const [isOpen, setIsOpen] = useState(false)
+    const pathname = usePathname()
   
     useEffect(() => {
         if (isOpen) {
@@ -38,13 +41,15 @@ const HamburgerMenu = () => {
         <div className="block md:hidden">
             {/* Header with Profile Image and Hamburger */}
             <div className="flex justify-between items-center gap-5 px-4 py-4">
-                <Image 
-                    src={'/assets/my-image.png'} 
-                    alt="my image" 
-                    width={40} 
-                    height={40} 
-                    className="rounded-full h-10 w-10" 
-                />
+                <Link href={'/'}>
+                    <Image 
+                        src={'/assets/my-image.png'} 
+                        alt="my image" 
+                        width={40} 
+                        height={40} 
+                        className="rounded-full h-10 w-10" 
+                    />
+                </Link>
                 <div>
                     <Hamburger toggled={isOpen} toggle={setIsOpen} />
                 </div>
@@ -82,44 +87,53 @@ const HamburgerMenu = () => {
                                     maxWidth: "calc(100% - 40px)",
                                 }}
                             >
-                                {/* Header with Close Button */}
-                                <div className="flex items-center justify-between px-5 sm:px-6 py-4 sm:py-5 border-b border-[#e0dbd0] flex-shrink-0">
-                                    {/* Close Button */}
-                                    <button
-                                        onClick={() => setIsOpen(false)}
-                                        className="p-2 hover:bg-[#f0ebe5] rounded-lg transition-colors ml-auto flex-shrink-0"
-                                        aria-label="Close modal"
-                                    >
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 24 24"
-                                            width="24"
-                                            height="24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            strokeWidth="2.5"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            className="text-[#4E433D]"
-                                        >
-                                            <line x1="18" y1="6" x2="6" y2="18"></line>
-                                            <line x1="6" y1="6" x2="18" y2="18"></line>
-                                        </svg>
-                                    </button>
-                                </div>
 
                                 {/* Scrollable Content - Dynamic Height */}
                                 <div className="overflow-y-auto px-5 sm:px-6 py-4 sm:py-6 text-[#4E433D]">
-                                    {/* Add your menu items or content here */}
-                                    {/* Example: */}
-                                    {/* 
+                                    
                                     <ul className="space-y-4">
-                                        <li><a href="/" className="block hover:text-[#8B3100]">Home</a></li>
-                                        <li><a href="/about" className="block hover:text-[#8B3100]">About</a></li>
-                                        <li><a href="/projects" className="block hover:text-[#8B3100]">Projects</a></li>
-                                        <li><a href="/contact" className="block hover:text-[#8B3100]">Contact</a></li>
+                                        <li onClick={() => setIsOpen(false)}>
+                                            <Link href={'/'} className={`${pathname === '/' ? "text-[#8B3100]" : "font-medium text-[#4E433D] hover:text-[#8B3100]" }`}>Home</Link>
+                                        </li>
+                                        <li onClick={() => setIsOpen(false)}>
+                                            <Link href={'/about'} className={`${pathname === '/about' ? "text-[#8B3100]" : "font-medium text-[#4E433D] hover:text-[#8B3100]" }`}>About</Link>
+                                        </li>
+                                        <li onClick={() => setIsOpen(false)}>
+                                            <Link href={'/projects'} className={`${pathname === '/projects' ? "text-[#8B3100]" : "font-medium text-[#4E433D] hover:text-[#8B3100]" }`}>Projects</Link>
+                                        </li>
+                                        <li onClick={() => setIsOpen(false)}>
+                                            <Link href={'/contact'} className={`${pathname === '/contact' ? "text-[#8B3100]" : "font-medium text-[#4E433D] hover:text-[#8B3100]" }`}>Contact</Link>
+                                        </li>
                                     </ul>
-                                    */}
+
+                                    <div className='my-7 bg-linear-to-r from-[#d2d2d2]/10 via-[#d2d2d2] to-[#d2d2d2]/10 h-[1px]'></div>
+                                   
+                                    <Link
+                                        href={`https://wa.me/+8801643876985?text=Hi`}
+                                        className="btn justify-center"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <span className="text-sm">Hire me</span>
+                                        <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        width="18"
+                                        height="18"
+                                        color="#000000"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        strokeWidth="1.5"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        >
+                                        <path d="M18.5 12L4.99997 12"></path>
+                                        <path d="M13 18C13 18 19 13.5811 19 12C19 10.4188 13 6 13 6"></path>
+                                        </svg>
+                                    </Link>   
+                                    <div className="mt-20">
+                                        <p className="text-center">Have a project in Mind? Let{"'"}s Talk</p>
+                                    </div>
                                 </div>
                             </motion.div>
                         </div>

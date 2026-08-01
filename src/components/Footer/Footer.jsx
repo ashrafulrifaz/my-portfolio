@@ -27,7 +27,7 @@ const Footer = () => {
                 </ul>
             </div>
             <div className='my-7 bg-linear-to-r from-[#d2d2d2]/10 via-[#d2d2d2] to-[#d2d2d2]/10 h-[1px]'></div>
-            <div className="flex items-center gap-6 justify-center">
+            <div className="flex items-center gap-3 lg:gap-6 justify-center">
                 <Link href={''}>
                     <svg
                     xmlns="http://www.w3.org/2000/svg"
