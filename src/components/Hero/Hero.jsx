@@ -6,8 +6,8 @@ import { fjallaOne } from "@/lib/fonts";
 
 const Hero = () => {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:h-[90vh] py-16 lg:py-0">
-            <div className="flex flex-col justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:h-[90vh] py-16 lg:py-0 lg:mt-20">
+            <div className="flex flex-col justify-center h-full">
                 <h6 className="text-sm font-medium text-[#8B3100] tracking-widest">WEB DESIGNER & DEVELOPER</h6>
                 <HyperText className={`${fjallaOne.className} text-8xl lg:text-9xl mt-12`}>Ashraful</HyperText>
                 <div className="-mt-10">

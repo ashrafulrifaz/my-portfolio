@@ -30,7 +30,7 @@ const Header = () => {
 
   return (
     <div>
-      <div className="sticky top-0 z-50 w-full flex justify-center pt-5 px-60 hidden md:block">
+      <div className="fixed top-0 z-[999] w-full justify-center pt-5 px-60 flex">
         <motion.div
           initial={false}
           animate={{

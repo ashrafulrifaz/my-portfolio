@@ -42,7 +42,7 @@ const projects = [
 
 const page = () => {
     return (
-        <div className="py-10 lg:py-14">
+        <div className="py-10 lg:py-14 lg:mt-20">
             <h3 className={`${rufina.className} text-xl text-center`}>Featured Projects</h3>
             {
                 projects?.map((project, idx) => (
