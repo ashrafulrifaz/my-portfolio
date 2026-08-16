@@ -15,10 +15,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en"
-      className={`${dmSans.className} h-full antialiased`}
-    >
+    <html lang="en" className={`${dmSans.className} h-full antialiased`}>
+      <head>
+        <link rel="preconnect" href="https://res.cloudinary.com" />
+        <link rel="dns-prefetch" href="https://res.cloudinary.com" />
+      </head>
       <body className="min-h-full flex flex-col">
         <Header />
         <main className="px-5 lg:px-60">{children}</main>

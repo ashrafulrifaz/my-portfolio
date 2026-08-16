@@ -1,15 +1,19 @@
+// next.config.mjs
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
   images: {
     remotePatterns: [
       {
         protocol: 'https',
         hostname: 'res.cloudinary.com',
-        port: '',
-        pathname: '(/db30o33kz/image/upload/**',
       },
     ],
+    formats: ['image/avif', 'image/webp'],
+  },
+
+  compiler: {
+    // Removes console.log statements in production builds
+    removeConsole: process.env.NODE_ENV === 'production',
   },
 };
 

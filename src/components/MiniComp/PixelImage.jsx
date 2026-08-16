@@ -71,7 +71,7 @@ export function PixelImage({
                     }}
                     transition={{
                       duration: 0.5,
-                      delay: (row + col) * 0.04,
+                      delay: (row + col) * 0.015,
                       ease: "easeOut",
                     }}
                     className="absolute inset-0"
@@ -96,6 +96,7 @@ export function PixelImage({
         height={height}
         className="hidden"
         priority
+        fetchPriority="high"
       />
 
       {/* Liquid glass blur layer (hover, after reveal) */}

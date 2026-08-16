@@ -50,8 +50,8 @@ const HamburgerMenu = () => {
                         className="rounded-full h-10 w-10" 
                     />
                 </Link>
-                <div>
-                    <Hamburger toggled={isOpen} toggle={setIsOpen} />
+                <div aria-label={isOpen ? "Close menu" : "Open menu"}>
+                     <Hamburger toggled={isOpen} toggle={setIsOpen} />
                 </div>
             </div>
 

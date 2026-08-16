@@ -1,7 +1,10 @@
+// page.js
+import dynamic from "next/dynamic";
 import Hero from "@/components/Hero/Hero";
-import Projects from "@/components/Projects/Projects";
-import Skills from "@/components/Skills/Skills";
-import Testimonials from "@/components/Testimonials/Testimonials";
+
+const Skills = dynamic(() => import("@/components/Skills/Skills"));
+const Projects = dynamic(() => import("@/components/Projects/Projects"));
+const Testimonials = dynamic(() => import("@/components/Testimonials/Testimonials"));
 
 export default function Home() {
   return (
