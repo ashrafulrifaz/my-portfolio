@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import React from 'react';
+import FadeOnHover from '@/components/Animations/FadeOnHover';
 
 const SocialSection = () => {
     return (
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 mt-6 lg:mt-10'>
+        <FadeOnHover className='grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 mt-6 lg:mt-10'>
             <div className='border border-[#d2d2d2] rounded-3xl p-5'>
                 <div className='flex items-center justify-between'>
                     <div>
@@ -53,7 +54,7 @@ const SocialSection = () => {
                     </Link>
                 </div>
             </div>
-        </div>
+        </FadeOnHover>
     );
 };
 

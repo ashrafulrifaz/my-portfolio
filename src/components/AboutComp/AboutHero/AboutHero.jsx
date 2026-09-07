@@ -2,10 +2,11 @@ import { HyperText } from '@/components/MiniComp/HyperText';
 import { PixelImage } from '@/components/MiniComp/PixelImage';
 import { fjallaOne } from '@/lib/fonts';
 import React from 'react';
+import FadeOnHover from '@/components/Animations/FadeOnHover';
 
 const AboutHero = () => {
     return (
-        <div className='py-16 lg:py-0 lg:h-[75vh]'>
+        <FadeOnHover className='py-16 lg:py-0 lg:h-[75vh]'>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 h-full">
                 <div className="flex flex-col justify-center">
                     <h6 className="text-sm font-medium text-[#8B3100] tracking-widest">ABOUT ME</h6>
@@ -26,7 +27,7 @@ const AboutHero = () => {
                 </div>
             </div>
             <div className='my-7 bg-linear-to-r from-[#d2d2d2]/10 via-[#d2d2d2] to-[#d2d2d2]/10 h-[1px]'></div>
-        </div>
+        </FadeOnHover>
     );
 };
 

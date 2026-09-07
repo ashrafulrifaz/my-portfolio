@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import FadeOnHover from '@/components/Animations/FadeOnHover';
 
 const INITIAL_MESSAGE = {
   role: "assistant",
@@ -56,7 +57,7 @@ const ChatSection = () => {
     };
 
     return (
-        <div className="border border-[#d2d2d2] rounded-3xl p-3 lg:p-5">
+        <FadeOnHover className="border border-[#d2d2d2] rounded-3xl p-3 lg:p-5">
             <div className="max-h-[420px] overflow-y-auto space-y-5 pr-1">
                 {messages.map((msg, i) =>
                     msg.role === "assistant" ? (
@@ -130,7 +131,7 @@ const ChatSection = () => {
                 </svg>
                 </button>
             </form>
-        </div>
+        </FadeOnHover>
     );
 };
 

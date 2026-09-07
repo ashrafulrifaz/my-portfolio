@@ -1,6 +1,7 @@
 import { rufina } from '@/lib/fonts';
 import Image from 'next/image';
 import Link from 'next/link';
+import FadeOnHover from '../Animations/FadeOnHover';
 
 const projects = [
   {
@@ -28,7 +29,7 @@ const projects = [
 
 const Projects = () => {
     return (
-        <div className='py-14 lg:py-20'>
+        <FadeOnHover className='py-14 lg:py-20'>
             <h3 className={`${rufina.className} text-xl`}>Featured Projects</h3>
             {
                 projects?.map((project, idx) => (
@@ -61,7 +62,7 @@ const Projects = () => {
                     </svg>
                 </Link>
             </div>
-        </div>
+        </FadeOnHover>
     );
 };
 

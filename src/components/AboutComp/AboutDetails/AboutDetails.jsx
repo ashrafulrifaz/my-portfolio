@@ -1,9 +1,10 @@
 import { rufina } from '@/lib/fonts';
 import React from 'react';
+import FadeOnHover from '@/components/Animations/FadeOnHover';
 
 const AboutDetails = () => {
     return (
-        <div className='pt-0 pb-10 lg:py-20'>
+        <FadeOnHover className='pt-0 pb-10 lg:py-20'>
             <div>
                 <h3 className={`${rufina.className} text-xl`}>Introduction</h3>
                 <p className='text-[#7E7067] text-[17px] mt-8'>I am Ashraful, a passionate and dedicated frontend developer based in Bangladesh. I have always been fascinated by the intersection of design and technology — the idea that a few lines of code can create something beautiful, functional, and impactful. From the very first time I built a webpage and saw it come to life in the browser, I knew this was exactly what I was meant to do.</p>
@@ -30,7 +31,7 @@ const AboutDetails = () => {
                 <p className='text-[#7E7067] text-[17px] mt-8'>There are a lot of developers out there — so why choose me? Because I do not just build websites. I build relationships, solve real problems, and deliver work that makes a lasting and meaningful impact. I approach every project with the same level of dedication and enthusiasm — whether it is a small personal site or a large-scale business platform. When you hire me, you are getting someone who is fully and completely invested in your success from the very first conversation.</p>
                 <p className='text-[#7E7067] text-[17px] mt-4'>I communicate clearly and consistently throughout the entire process, keep you updated and involved at every stage, and always deliver on time without ever compromising on quality. I take enormous pride in going above and beyond for every single client — not because I have to, but because that is simply the standard I hold myself to every single day. Your success is my success. Your vision becomes my mission. And that is a commitment I take seriously with every project I choose to accept and every client I choose to work with.</p>
             </div>
-        </div>
+        </FadeOnHover>
     );
 };
 

@@ -2,6 +2,8 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { rufina } from '@/lib/fonts';
+import FadeOnHover from '../Animations/FadeOnHover';
 
 const floatAnimation = (duration, delay, distance = 12) => ({
   animate: {
@@ -29,7 +31,7 @@ const hoverEffect = {
 
 const Skills = () => {
     return (
-        <div className='h-[90vh] lg:h-[70vh] flex flex-col justify-center items-center relative'>
+        <FadeOnHover className='h-[90vh] lg:h-[70vh] flex flex-col justify-center items-center relative'>
             <h6 className='text-[#251D18] text-lg capitalize font-medium'>Always Building <br /> always growing</h6>
 
             <div>
@@ -97,7 +99,7 @@ const Skills = () => {
                     <Image src={'/assets/skills/Next.js.png'} alt='nextjs logo' width={50} height={50} className='w-10 h-10 rounded-lg' />
                 </motion.div>
             </div>
-        </div>
+        </FadeOnHover>
     );
 };
 

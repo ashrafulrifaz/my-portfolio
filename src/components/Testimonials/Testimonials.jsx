@@ -1,11 +1,12 @@
 import { rufina } from '@/lib/fonts';
 import Image from 'next/image';
 import React from 'react';
+import FadeOnHover from '../Animations/FadeOnHover';
 
 const Testimonials = () => {
 
     return (
-        <div className='pt-6 lg:pt-10 pb-10 lg:pb-16'>
+        <FadeOnHover className='pt-6 lg:pt-10 pb-10 lg:pb-16'>
             <h3 className={`${rufina.className} text-xl`}>Testimonials</h3>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-10 mt-12">
                 <div>
@@ -57,7 +58,7 @@ const Testimonials = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </FadeOnHover>
     );
 };
 
