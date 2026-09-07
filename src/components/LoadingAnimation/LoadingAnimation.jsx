@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { useState, useEffect } from "react";
 
 export default function LoadingAnimation({
@@ -35,48 +35,31 @@ export default function LoadingAnimation({
         height: "100%",
         minHeight: 420,
         display: "flex",
-        inset: 0,
         position: "fixed",
+        inset: 0,
         zIndex: 9999,
         alignItems: "center",
         justifyContent: "center",
         background: "#FCE9D3",
-        fontFamily:
-          "'Helvetica Neue', Helvetica, Arial, sans-serif",
+        fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif",
       }}
     >
       <div style={{ textAlign: "center" }}>
         <div
           style={{
-            position: "relative",
+            display: "inline-block",
             fontSize: "clamp(32px, 6vw, 56px)",
             fontWeight: 800,
             letterSpacing: "0.02em",
             lineHeight: 1,
             userSelect: "none",
+            backgroundImage: `linear-gradient(to right, #7A4632 ${progress}%, #E8B79A ${progress}%)`,
+            WebkitBackgroundClip: "text",
+            backgroundClip: "text",
+            color: "transparent",
           }}
         >
-          {/* Base layer: unfilled name, low-contrast tone */}
-          <span aria-hidden="true" style={{ color: "#E8B79A" }}>
-            {name}
-          </span>
-
-          {/* Overlay layer: filled name, clipped to progress width */}
-          <span
-            aria-hidden="true"
-            style={{
-              position: "absolute",
-              left: 0,
-              top: 0,
-              color: "#7A4632",
-              width: `${progress}%`,
-              overflow: "hidden",
-              whiteSpace: "nowrap",
-              transition: "width 80ms linear",
-            }}
-          >
-            {name}
-          </span>
+          {name}
         </div>
 
         <div
